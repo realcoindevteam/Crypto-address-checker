@@ -1,0 +1,22 @@
+{
+  "name": "crypto-address-checker",
+  "version": "4.0.0",
+  "main": "build/index.js",
+  "repository": "git@github.com:brickblock-io/crypto-address-checker.git",
+  "author": "mattgstevens <mattgstevens@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel index.js -d build/",
+    "preversion": "yarn build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "prettier": "^1.8.2"
+  },
+  "dependencies": {
+    "bs58check": "^2.1.0",
+    "crypto-js": "^3.1.9-1"
+  }
+}
